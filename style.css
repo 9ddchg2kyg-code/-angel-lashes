@@ -208,7 +208,8 @@ font-size:48px;
 }
 
 .hero-logo{
-width:200px;
+width:300px;
+max-width:90%;
 }
 
 .hero p{
