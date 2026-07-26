@@ -55,9 +55,10 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:url("images/images/IMG_5046.png") center/cover no-repeat;
-position:relative;
-}
+background:url("images/images/IMG_5046.png") center top;
+background-size:contain;
+background-repeat:no-repeat;
+background-color:#f8f5f2;
 
 .hero-overlay{
 position:absolute;
