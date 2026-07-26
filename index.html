@@ -4,9 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Angel_lashes</title>
+<title>Angel Lashes | Maria Fedorenco</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,149 +16,117 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
 }
 
 body{
+background:#fbf9f7;
+font-family:'Montserrat',sans-serif;
+color:#333;
+overflow-x:hidden;
+}
 
-background:#F8F4F9;
-color:#3E3553;
+.hero{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,.85)),
+url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+padding:40px;
 
 }
 
-header{
-
-background:white;
-padding:30px 20px;
-text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-
+.container{
+max-width:700px;
 }
 
 .logo{
 
-width:160px;
-border-radius:50%;
-margin-bottom:20px;
+font-size:56px;
+font-family:'Cormorant Garamond',serif;
+letter-spacing:2px;
+color:#b08d57;
+
+margin-bottom:15px;
 
 }
 
 h1{
 
-font-size:40px;
+font-size:34px;
+margin-bottom:20px;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+p{
+
+font-size:18px;
+line-height:1.8;
+
+margin-bottom:40px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:18px 42px;
+
+background:#b08d57;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
 font-weight:600;
 
-}
-
-.subtitle{
-
-color:#8d6eb5;
-margin-top:10px;
-
-}
-
-.buttons{
-
-margin-top:35px;
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-
-}
-
-button{
-
-padding:15px 30px;
-border:none;
-border-radius:40px;
-cursor:pointer;
-font-size:17px;
 transition:.3s;
 
 }
 
-.main{
+.button:hover{
 
-background:#8F6DCC;
-color:white;
+background:#8f6c39;
 
-}
-
-.main:hover{
-
-background:#7756b7;
+transform:translateY(-3px);
 
 }
 
-.white{
+.scroll{
 
-background:white;
+margin-top:80px;
 
-}
+font-size:13px;
 
-section{
+letter-spacing:3px;
 
-max-width:1200px;
-margin:auto;
-padding:70px 20px;
+color:#999;
 
-}
-
-.section-title{
-
-font-size:34px;
-text-align:center;
-margin-bottom:50px;
+animation:float 2s infinite;
 
 }
 
-.cards{
+@keyframes float{
 
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+0%{transform:translateY(0);}
 
-}
+50%{transform:translateY(10px);}
 
-.card{
-
-background:white;
-border-radius:25px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-
-.card img{
-
-width:100%;
-height:280px;
-object-fit:cover;
-
-}
-
-.card h3{
-
-padding:20px;
-
-}
-
-.price{
-
-font-size:28px;
-font-weight:700;
-color:#8F6DCC;
-padding:0 20px 20px;
-
-}
-
-footer{
-
-background:#8F6DCC;
-color:white;
-padding:50px;
-text-align:center;
+100%{transform:translateY(0);}
 
 }
 
@@ -166,103 +136,45 @@ text-align:center;
 
 <body>
 
-<header>
+<section class="hero">
 
-<img src="logo.png" class="logo">
+<div class="container">
 
-<h1>Angel_lashes</h1>
+<div class="logo">
 
-<p class="subtitle">
-Наращивание ресниц • LED Lash Extension
+Angel Lashes
+
+</div>
+
+<h1>
+
+Maria Fedorenco
+
+</h1>
+
+<p>
+
+Премиальное наращивание ресниц в Кишинёве.<br>
+
+Классика • Объёмы • LED-наращивание
+
 </p>
 
-<div class="buttons">
+<a class="button" href="#">
 
-<button class="main">
-Онлайн запись
-</button>
+Записаться
 
-<button class="white">
-Портфолио
-</button>
+</a>
 
-<button class="white">
-Прайс
-</button>
+<div class="scroll">
 
-</div>
-
-</header>
-
-<section>
-
-<h2 class="section-title">
-Популярные услуги
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="1.jpg">
-
-<h3>Классическое наращивание</h3>
-
-<div class="price">
-500 MDL
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="2.jpg">
-
-<h3>LED Lash Extension</h3>
-
-<div class="price">
-550 MDL
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="3.jpg">
-
-<h3>2D</h3>
-
-<div class="price">
-600 MDL
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="4.jpg">
-
-<h3>3D</h3>
-
-<div class="price">
-650 MDL
-</div>
+SCROLL ↓
 
 </div>
 
 </div>
 
 </section>
-
-<footer>
-
-<h2>Angel_lashes</h2>
-
-<p>
-Красота начинается со взгляда ✨
-</p>
-
-</footer>
 
 </body>
 </html>
