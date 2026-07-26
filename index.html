@@ -6,169 +6,83 @@
 
 <title>Angel Lashes | Maria Fedorenco</title>
 
+<link rel="stylesheet" href="style.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-background:#fbf9f7;
-font-family:'Montserrat',sans-serif;
-color:#333;
-overflow-x:hidden;
-}
-
-.hero{
-
-min-height:100vh;
-
-background:
-linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,.85)),
-url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-
-padding:40px;
-
-}
-
-.container{
-max-width:700px;
-}
-
-.logo{
-
-font-size:56px;
-font-family:'Cormorant Garamond',serif;
-letter-spacing:2px;
-color:#b08d57;
-
-margin-bottom:15px;
-
-}
-
-h1{
-
-font-size:34px;
-margin-bottom:20px;
-
-font-family:'Cormorant Garamond',serif;
-
-}
-
-p{
-
-font-size:18px;
-line-height:1.8;
-
-margin-bottom:40px;
-
-}
-
-.button{
-
-display:inline-block;
-
-padding:18px 42px;
-
-background:#b08d57;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:40px;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.button:hover{
-
-background:#8f6c39;
-
-transform:translateY(-3px);
-
-}
-
-.scroll{
-
-margin-top:80px;
-
-font-size:13px;
-
-letter-spacing:3px;
-
-color:#999;
-
-animation:float 2s infinite;
-
-}
-
-@keyframes float{
-
-0%{transform:translateY(0);}
-
-50%{transform:translateY(10px);}
-
-100%{transform:translateY(0);}
-
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<section class="hero">
+<header class="hero">
 
-<div class="container">
+<div class="overlay"></div>
 
-<div class="logo">
+<div class="hero-content">
 
-Angel Lashes
+<h1>Angel Lashes</h1>
+
+<h2>Maria Fedorenco</h2>
+
+<p>
+Премиальное наращивание ресниц<br>
+Кишинёв
+</p>
+
+<a href="#price" class="btn">
+Записаться
+</a>
 
 </div>
 
-<h1>
+</header>
 
-Maria Fedorenco
+<section class="about">
 
-</h1>
+<div class="container">
+
+<h2>Обо мне</h2>
 
 <p>
 
-Премиальное наращивание ресниц в Кишинёве.<br>
+Меня зовут Мария.
 
-Классика • Объёмы • LED-наращивание
+Я мастер по наращиванию ресниц с опытом более 6 лет.
+
+Работаю только качественными материалами.
+
+Выполняю классическое, объёмное и LED-наращивание.
+
+Главная цель — красивые, лёгкие и комфортные ресницы без склеек.
 
 </p>
 
-<a class="button" href="#">
+</div>
 
-Записаться
+</section>
 
-</a>
+<section class="gallery">
 
-<div class="scroll">
+<div class="container">
 
-SCROLL ↓
+<h2>Мои работы</h2>
+
+<div class="grid">
+
+<img src="images/images/IMG_4937.jpeg">
+
+<img src="images/images/IMG_4999.jpeg">
+
+<img src="images/images/IMG_5001.jpeg">
+
+<img src="images/images/IMG_2311.jpeg">
+
+<img src="images/images/IMG_4474.jpeg">
+
+<img src="images/images/IMG_1866.jpeg">
 
 </div>
 
@@ -176,5 +90,77 @@ SCROLL ↓
 
 </section>
 
+<section id="price" class="price">
+
+<div class="container">
+
+<h2>Прайс</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Классическое</h3>
+
+<p>1D — 500 lei</p>
+
+<p>2D — 550 lei</p>
+
+<p>3D — 600 lei</p>
+
+</div>
+
+<div class="card">
+
+<h3>LED</h3>
+
+<p>1D — 550 lei</p>
+
+<p>2D — 600 lei</p>
+
+<p>3D — 650 lei</p>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="container">
+
+<h2>Контакты</h2>
+
+<p>
+Instagram:
+<br>
+<strong>@angel_lashes</strong>
+</p>
+
+<p>
+Maria Fedorenco
+</p>
+
+<a class="btn" href="https://instagram.com/angel_lashes" target="_blank">
+Перейти в Instagram
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Angel Lashes
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
